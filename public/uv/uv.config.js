@@ -1,4 +1,4 @@
-// This file overwrites the stock UV config.js
+// This file overwrites the stock uv config.js
 
 self.__uv$config = {
   prefix: "/uv/service/",

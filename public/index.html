@@ -1,119 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Ultraviolet | Sophisticated Web Proxy</title>
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
-    <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
-    <script src="index.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Ultraviolet (Web Proxy)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I unblock sites using Ultraviolet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if Ultraviolet is blocked or not working?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
-            }
-          }
-        ]
-      }
-    </script>
-  </head>
-
-  <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>Ultraviolet | TN</h1>
+<html lang="en">
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta name ="description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="og:type" content ="website"/>
+  <meta property ="og:url" content ="https://revela.network"/>
+  <meta property ="og:title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta property ="og:description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="og:image" content ="https://cdn.joshsevero.dev/Static/Media/5QEvQJ.png"/>
+  <meta property ="twitter:card" content ="summary_large_image"/>
+  <meta property ="twitter:url" content ="https://revela.network"/>
+  <meta property ="twitter:title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta property ="twitter:description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="twitter:image" content ="https://cdn.joshsevero.dev/Static/Media/5QEvQJ.png"/>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="joshsevero" data-description="Support me on Buy me a coffee!" data-message="Help keep this website online by donating!" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  <!-- Meta Data -->
+  <!-- Scripts -->
+  <script src="uv/uv.bundle.js" defer></script>
+  <script src="uv/uv.config.js" defer></script>
+  <script src="register-sw.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="index.js" defer></script>
+  <script src="cloak.js"></script>
+<!-- <script src="importhost.js"></script> -->
+  <!-- Scripts -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="import.css" />
+  <link rel="stylesheet" href="index.css" />
+  <!-- CSS -->
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="/5QEvQJ.png">
+    <div class="paragraph">
+      <h2>A Sophisticated Web Proxy that allows you to browse the web anonymously and securely.</h2>
     </div>
-    <div class="flex-center desc left-margin">
-      <p>
-        Ultraviolet is highly sophisticated proxy used for evading internet
-        censorship.
+    <div class="buttons">
+      <button onclick="cloak()" class="cloaker">Activate Cloaker</button>
+      <button onclick="window.location.href='https://' + window.location.hostname + '/games';" class="games">Games</button>
+    </div>
+    <div class="search-bar">
+      <form id="rv-form">
+        <input type="hidden" value="https://duckduckgo.com/?q=%s" id="rv-search-engine" />
+        <input type="text" id="rv-address" placeholder="Search the web without being censored" />
+      </form>
+    </div>
+    <div class="footer">
+      <button class="credits" title="Credits" onclick="window.location.href='https://' + window.location.hostname + '/other/credits';">Credits</button>
+      <button class="node" title="Node ID">
+        Node ID:
+        <span class="node-id"></span>
+      </button>
+      <button class="stats" title="System Stats" onclick="window.location.href='https://status.revela.network';">System Stats</button>
+    </div>
+    <div class="ad-banner">
+      <a href="https://billing.glasshost.net/aff.php?aff=16"><img src="/pFGAHZ.gif" alt="GlassHost"></a>
+    </div>
+    <div class="error">
+      <p id="rv-error">
+        <pre id="rv-error-code"></pre>
       </p>
     </div>
-
-    <form id="uv-form" class="flex-center">
-      <input
-        id="uv-search-engine"
-        value="https://www.google.com/search?q=%s"
-        type="hidden"
-      />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
-    </form>
-    <div class="desc left-margin">
-      <p id="uv-error"></p>
-      <pre id="uv-error-code"></pre>
-    </div>
-    <footer>
-      <div>
-        <a
-          title="The TitaniumNetwork GitHub organization"
-          href="https://github.com/titaniumnetwork-dev"
-          >TitaniumNetwork</a
-        >
-        <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-          >Discord</a
-        >
-        <a
-          title="The TompHTTP GitHub organization"
-          href="https://github.com/tomphttp"
-          >TompHTTP</a
-        >
-        <a
-          title="The official deployment repository for Ultraviolet"
-          href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-          >GitHub</a
-        >
-        <a title="License information" href="credits.html">Credits</a>
-      </div>
-      <div>
-        <span>Ultraviolet &copy; TN 2023</span>
-      </div>
-    </footer>
-  </body>
+  </div>
+  
+</body>
 </html>
