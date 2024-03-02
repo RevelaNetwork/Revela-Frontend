@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; /* Adjusted margin-top */
+  margin-top: 10px; /* Adjusted margin-top */
   /* margin-bottom: -200px; */
 }
 
